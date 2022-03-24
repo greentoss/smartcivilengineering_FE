@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Articles from "./components/Articles";
 import ClientError from "./components/ClientError";
 import HeaderMain from "./components/HeaderMain";
+import FooterMain from "./components/FooterMain";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path='/services' element = {<Services />} />
                 <Route path = '*' element = {<ClientError />} />
             </Routes>
+            <FooterMain />
 
         </Router>
     </>
