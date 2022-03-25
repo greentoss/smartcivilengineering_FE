@@ -1,10 +1,11 @@
 import react from 'react';
 
 function Services() {
-    return (<>
-
-            <h2>Services</h2>
-
+    return (
+        <>
+            <div className='container'>
+                <h2>Services</h2>
+            </div>
         </>
     );
 }

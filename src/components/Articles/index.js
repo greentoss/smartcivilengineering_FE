@@ -1,10 +1,11 @@
 import react from 'react';
 
 function Articles() {
-    return (<>
-
-            <h2>Articles</h2>
-
+    return (
+        <>
+            <div className='container'>
+                <h2>Articles</h2>
+            </div>
         </>
     );
 }

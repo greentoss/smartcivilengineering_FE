@@ -1,10 +1,11 @@
 import react from 'react';
 
 function Main() {
-    return (<>
-
-            <h2>Main</h2>
-
+    return (
+        <>
+          <div className='container'>
+              <h2>Main</h2>
+          </div>
         </>
     );
 }
