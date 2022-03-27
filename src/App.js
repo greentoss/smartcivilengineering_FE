@@ -8,11 +8,13 @@ import Articles from "./components/Articles";
 import ClientError from "./components/ClientError";
 import HeaderMain from "./components/HeaderMain";
 import FooterMain from "./components/FooterMain";
+import Banner from "./components/Banner"
 
 function App() {
   return (
     <>
         <Router >
+            <Banner />
             <HeaderMain />
             <Routes>
                 <Route exact path='/' element = {<Main />} />

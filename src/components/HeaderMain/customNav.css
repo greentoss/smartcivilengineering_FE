@@ -1,0 +1,14 @@
+/*.customBtn {*/
+/*    margin-left: 1vw;*/
+/*}*/
+
+/*.customToggleBtn {*/
+
+/*}*/
+
+.green-strype {
+    height: 17px;
+    margin: 0 auto;
+    background: rgb(76,148,4);
+    background: radial-gradient(circle, rgba(76,148,4,1) 15%, rgba(52,92,4,1) 85%);
+}

@@ -1,0 +1,26 @@
+.banner {
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 5px;
+    background-color: #8d8d8d;
+    text-align: center; /*turn off when animation*/
+}
+.banner-text {
+    margin: 0 auto;
+    display: inline-block;
+    /*animation: scroll 20s infinite linear;*/
+}
+.banner-box {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes scroll {
+    0% {
+        transform: translate(100vw, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
