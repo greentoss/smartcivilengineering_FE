@@ -9,6 +9,7 @@ import ClientError from "./components/ClientError";
 import HeaderMain from "./components/HeaderMain";
 import FooterMain from "./components/FooterMain";
 import Banner from "./components/Banner"
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/about' element = {<About />} />
                 <Route path='/articles' element = {<Articles />} />
                 <Route path='/services' element = {<Services />} />
+                <Route path='/contacts' element = {<Contacts />} />
                 <Route path = '*' element = {<ClientError />} />
             </Routes>
             <FooterMain />
