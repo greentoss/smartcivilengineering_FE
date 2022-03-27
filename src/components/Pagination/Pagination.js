@@ -3,7 +3,7 @@ import './pagination.css';
 function Pagination() {
     return (
         <>
-            <nav aria-label="..." className='col-12 d-flex justify-content-center'>
+            <nav aria-label="..." className='col-12 d-flex justify-content-center mt-3'>
                 <ul className="pagination">
                     <li className="page-item disabled">
                         <a className="page-link color-text-dark paginationBtn">Previous</a>

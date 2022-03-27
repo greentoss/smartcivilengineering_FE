@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import logo from "../../logo.svg";
 import headerStyle from './index.module.css';
 import './customNav.css'
+import LanguageToggler from "../LanguageToggler/LanguageToggler";
 
 function HeaderMain() {
     return (
@@ -23,11 +24,11 @@ function HeaderMain() {
                                 </button>
                                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <ul className="navbar-nav d-flex justify-content-lg-end">
-                                        <li className='mr-lg-4 mt-sm-2 nav-item  active' ><Link to='/' ><a className='nav-link btn-lg text-white bg-dark text-sm-center'>Main</a></Link></li>
-                                        <li className='mr-lg-4 mt-sm-2 nav-item '><Link to='/about' className=''><a className='nav-link btn-lg text-white bg-dark text-sm-center'>About</a></Link></li>
-                                        <li className='mr-lg-4 mt-sm-2 nav-item '><Link to='/articles'><a className='nav-link btn-lg text-white bg-dark text-sm-center'>Articles</a></Link></li>
-                                        <li className='mr-lg-4 mt-sm-2 nav-item '>< Link to='/services'><a className='nav-link btn-lg text-white bg-dark text-sm-center'>Services</a></Link></li>
-                                        <li className='mr-lg-4 mt-sm-2'>< Link to='/'><a href="#contact" className='nav-item nav-link btn-lg text-white bg-dark text-sm-center'>Contacts</a></Link></li>
+                                        <li className='mr-lg-4 mt-sm-2 nav-item  active' ><Link to='/' ><button type='button' className='nav-link btn-lg text-white bg-dark text-sm-center'>Main</button></Link></li>
+                                        <li className='mr-lg-4 mt-sm-2 nav-item '><Link to='/about' className=''><button type='button' className='nav-link btn-lg text-white bg-dark text-sm-center'>About</button></Link></li>
+                                        <li className='mr-lg-4 mt-sm-2 nav-item '><Link to='/articles'><button type='button' className='nav-link btn-lg text-white bg-dark text-sm-center'>Articles</button></Link></li>
+                                        <li className='mr-lg-4 mt-sm-2 nav-item '>< Link to='/services'><button type='button' className='nav-link btn-lg text-white bg-dark text-sm-center'>Services</button></Link></li>
+                                        <li className='mr-lg-4 mt-sm-2'>< Link to='/'><button  className='nav-item nav-link btn-lg text-white bg-dark text-sm-center'>Contacts</button></Link></li>
                                     </ul>
                                     {/*<a className="d-block p-2 bg-dark text-white d-sm-none d-md-none d-lg-block" href="#">Push to*/}
                                     {/*    start</a>*/}
