@@ -24,7 +24,6 @@ function App() {
                 <Route path = '*' element = {<ClientError />} />
             </Routes>
             <FooterMain />
-
         </Router>
     </>
   );
