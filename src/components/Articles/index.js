@@ -1,4 +1,3 @@
-import react from 'react';
 import Article from "../Article";
 import '../Pagination/pagination.css';
 import Pagination from "../Pagination/Pagination";
