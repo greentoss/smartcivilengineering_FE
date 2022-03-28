@@ -1,0 +1,27 @@
+.submit-buttons button{
+    width: 90px;
+    background-color: #64b404;
+}
+.submit-btn{
+    border: 2px solid #343a40;
+}
+.submit-btn:hover{
+    background-color: #343a40;
+    border: 2px solid #343a40;
+}
+.contacts-box div{
+    padding: 5px 0;
+    display: flex;
+}
+.contacts-box div p{
+    width: 100px;
+}
+.otherInfo-text {
+    font-style: italic;
+    font-size: 16px;
+}
+.form-control:focus {
+    outline: none;
+    border:2px solid #343a40;
+    box-shadow: none;
+}

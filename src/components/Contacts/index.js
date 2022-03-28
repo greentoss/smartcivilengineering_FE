@@ -1,10 +1,11 @@
+import './contacts-styles.css'
 
 function Contacts() {
     return (
         <>
-            <div className="container" >
+            <div className="container pt-3">
                 <div className='row'>
-                    <div className='contact-form'>
+                    <div className='contact-form col-8'>
                         <h2>Contact Form</h2>
                         <hr />
                         <form className="mb-5" method="post" id="contactForm" name="contactForm">
@@ -17,7 +18,7 @@ function Contacts() {
                             <div className="row">
                                 <div className="col-md-12 form-group">
                                     <label htmlFor="name" className="col-form-label">Your City:</label>
-                                    <input type="text" className="form-control" name="name" id="name"/>
+                                    <input type="text" className="form-control" name="city" id="city"/>
                                 </div>
                             </div>
                             <div className="row">
@@ -26,44 +27,46 @@ function Contacts() {
                                     <input type="text" className="form-control" name="email" id="email"/>
                                 </div>
                             </div>
-
                             <div className="row">
                                 <div className="col-md-12 form-group">
                                     <label htmlFor="message" className="col-form-label">Your Message:</label>
-                                    <textarea className="form-control" name="message" id="message" cols="30" rows="7"/>
+                                    <textarea className="form-control" name="message" id="message" cols="30" rows="10"/>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <button type='button' className='btn btn-success'>Edit</button>
-                                    <button type='button' className='btn btn-success'>Clear</button>
-                                    <input type="submit" value="Send Message" className="btn btn-primary rounded-0 py-2 px-4"/>
-                                    <span className="submitting"/>
+                            <div className="row d-flex justify-content-end pl-3 pr-3">
+                                <div className='row d-flex col-6 justify-content-between submit-buttons'>
+                                    <button type='button' className='btn btn-success '>Edit</button>
+                                    <button type='button' className='btn btn-success '>Clear</button>
+                                    <button type="submit" value="Send Message" className="btn btn-primary submit-btn">Submit</button>
+                                    {/*<span className="submitting"/>*/}
                                 </div>
+
                             </div>
+                            <hr/>
                         </form>
+
                     </div>
-                    <div className='contacts'>
-                        <div>
+                    <div className='contacts col-4'>
+                        <div className='contacts-box'>
                             <h2>Contacts</h2>
                             <hr />
                             <div>
-                                <span>Country:</span><span>Ukraine:</span>
+                                <p>Country:</p><span>Ukraine</span>
                             </div>
                             <div>
-                                <span>City:</span><span>Kyiv:</span>
+                                <p>City:</p><span>Kyiv</span>
                             </div>
                             <div>
-                                <span>Telephone:</span><span>+380502932772:</span>
+                                <p>Phone:</p><span>+380502932772</span>
                             </div>
                             <div>
-                                <span>Email:</span><span>smartandcivileng@gmail.com</span>
+                                <p>Email:</p><span>smartandcivileng@gmail.com</span>
                             </div>
                         </div>
-                        <div>
+                        <div className='contacts-box'>
                             <h2>Other Information</h2>
                             <hr />
-                            <p>
+                            <p className='otherInfo-text'>
                                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volupta- tum deleniti atque corrupti quos dolores et quas molestias excep- turi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.
                             </p>
                         </div>
