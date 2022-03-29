@@ -1,0 +1,19 @@
+.carousel-item {
+    max-height: 55vw;
+}
+.carousel-img{
+    width: 100%;
+    height: auto;
+}
+
+/*.carousel-indicators .carousel-paginators {*/
+/*    background-color: #64b404;*/
+/*    border-color: #64b404;*/
+/*    width: 50px;*/
+/*    height: 38px;*/
+/*    text-align: center;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+

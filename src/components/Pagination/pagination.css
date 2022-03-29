@@ -11,6 +11,11 @@
 .active-btn {
     background-color: #64b404;
     border-color: #64b404;
+
+}
+.paginationBtnCenter {
+    width: 50px;
+    text-align: center;
 }
 
 
