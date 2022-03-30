@@ -33,8 +33,8 @@ function Contacts() {
                                     <textarea className="form-control" name="message" id="message" cols="30" rows="10"/>
                                 </div>
                             </div>
-                            <div className="row d-flex justify-content-end pl-3 pr-3">
-                                <div className='row d-flex col-6 justify-content-between submit-buttons'>
+                            <div className="row d-flex justify-content-end pt-3">
+                                <div className='row d-flex col-6 justify-content-around submit-buttons'>
                                     <button type='button' className='btn btn-success '>Edit</button>
                                     <button type='button' className='btn btn-success '>Clear</button>
                                     <button type="submit" value="Send Message" className="btn btn-primary submit-btn">Submit</button>
