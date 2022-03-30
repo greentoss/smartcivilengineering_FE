@@ -8,6 +8,8 @@ function Articles() {
         <>
             <div className='container pt-3'>
                 <Article />
+                <Article />
+                <Article />
                 <Pagination />
             </div>
         </>
