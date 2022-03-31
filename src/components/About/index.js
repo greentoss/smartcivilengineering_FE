@@ -1,4 +1,4 @@
-import react from 'react';
+
 import Clients from "../Clients";
 
 function About() {
@@ -10,13 +10,26 @@ function About() {
                     <p className='align-self-center'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
                 </div>
-                <div className='row'>
-                    <div className='about-company-card'>
-                        <div>
-                            <img  alt='about-team-image'/>
+                <div className='row flex-wrap'>
+                    <div className='row'>
+                        <div className='about-company-card'>
+                            <div>
+                                <img  alt='about-team-image'/>
+                            </div>
+                            <h3>Soluta esse molestie</h3>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
                         </div>
-                        <h3>Soluta esse molestie</h3>
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                        <hr />
+                    </div>
+                    <div className='row'>
+                        <div className='about-company-card'>
+                            <div>
+                                <img  alt='about-team-image'/>
+                            </div>
+                            <h3>Soluta esse molestie</h3>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                        </div>
+                        <hr />
                     </div>
                 </div>
                 <div className='row flex-column'>

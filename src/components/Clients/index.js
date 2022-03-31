@@ -1,7 +1,7 @@
 
 function Clients() {
     return (
-        <>
+        <div className='mb-3'>
             <div className='row flex-column'>
                 <h2 className='text-center'>Our Clients</h2>
                 <p className='align-self-center'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
@@ -27,7 +27,8 @@ function Clients() {
                     <img src={require('../../images/partn6.png')} alt="about-clients-image"/>
                 </div>
             </div>
-        </>
+            <hr />
+        </div>
     );
 }
 
