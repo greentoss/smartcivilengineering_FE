@@ -4,7 +4,7 @@ function Clients() {
         <div className='mb-3'>
             <div className='row flex-column'>
                 <h2 className='text-center'>Our Clients</h2>
-                <p className='align-self-center'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+                <p className='align-self-center text-center fs-5 w-75 pt-3 pb-3'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
             </div>
             <div className="row justify-content-between">
