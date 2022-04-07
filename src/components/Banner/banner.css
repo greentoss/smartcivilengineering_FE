@@ -6,6 +6,26 @@
     background-color: #8d8d8d;
     text-align: center; /*turn off when animation*/
 }
+.banner-active {
+    display: block;
+}
+.banner-notActive {
+    display: none;
+}
+.banner-box {
+    position: relative;
+}
+.banner-btn-close {
+    position: absolute;
+    margin-left: 10vw;
+    opacity: 0;
+    transform: scale(0.5)
+}
+.banner:hover .banner-btn-close {
+    opacity: 0.5;
+}
+
+/*=============================================*/
 .banner-text {
     margin: 0 auto;
     display: inline-block;
