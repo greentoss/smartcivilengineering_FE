@@ -20,6 +20,16 @@
     height: auto;
 }
 
+/*==================================*/
+.service-img{
+    transition: transform 0.5s; /* Animation */
+}
+
+.service-img:hover {
+    transform: scale(1.02);
+}
+/*==================================*/
+
 .service-preview-text {
     font-style: italic;
     font-size: 16px;

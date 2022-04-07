@@ -6,9 +6,10 @@ function FooterMain() {
         <>
             <div className={footerStyle.footer}>
                 <a id="contact"/>
-                <div className='container pt-5'>
-                    <div className='row'>
-                        <div className="footer-center col-6">
+                <div className='container p-0 pt-5 mx-sm-auto'>
+                    <div className='row flex-column flex-sm-row mx-5 mx-sm-auto'>
+                        <div className="col-sm-6">
+
                             <div className='d-flex align-items-center  mb-3'>
                                 <div className='w-10'><i className="fa fa-map-marker margin-right-2vw custom-icons-round"/></div>
                                 <p className='m-0 text-white'><span>04128. Cedros Ave Solana Beach, California</span></p>
@@ -22,7 +23,8 @@ function FooterMain() {
                                 <p className='m-0 text-white'><a href="mailto:smartandcivileng@gmail.com" className='text-white'>smartandcivileng@gmail.com</a></p>
                             </div>
                         </div>
-                        <div className="col-6">
+                        <div className=" col-sm-6">
+
                             <p className=" footer-company-about">
                                 <span className='text-white'>About the company :</span>
                             </p>

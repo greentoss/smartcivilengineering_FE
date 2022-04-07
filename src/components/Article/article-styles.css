@@ -23,6 +23,16 @@
     width: 100%;
     height: auto;
 }
+/*==================================*/
+.article-img{
+    transition: transform 0.5s; /* Animation */
+}
+
+.article-img:hover {
+    transform: scale(1.02);
+}
+/*==================================*/
+
 
 .article-preview-text {
     font-style: italic;
@@ -39,3 +49,4 @@
     text-decoration: none;
     color: #64b404;
 }
+
