@@ -32,8 +32,10 @@ function HeaderMain() {
                                         <span className='text-secondary d-inline-block'>|</span>
                                         <span className='text-info d-inline-block'>ua</span>
                                     </div>
-                                    <button className='btn btn-sm btn-outline-info w-100 mb-2' type='button'>Login</button>
-                                    <button className='btn btn-sm btn-outline-info w-100 mb-2' type='button'>Signup</button>
+                                    <Link to='/login'><button className='btn btn-sm btn-outline-info w-100 mb-2' type='button'>Login</button></Link>
+                                    <Link to='/register'><button className='btn btn-sm btn-outline-info w-100 mb-2' type='button'>SignUp</button></Link>
+                                    {/*<button className='btn btn-sm btn-outline-info w-100 mb-2' type='button'>Login</button>*/}
+                                    {/*<button className='btn btn-sm btn-outline-info w-100 mb-2' type='button'>Signup</button>*/}
                                 </div>
                             </div>
                         </div>

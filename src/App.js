@@ -10,6 +10,8 @@ import HeaderMain from "./components/HeaderMain";
 import FooterMain from "./components/FooterMain";
 import Banner from "./components/Banner"
 import Contacts from "./components/Contacts";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
                 <Route path='/articles' element = {<Articles />} />
                 <Route path='/services' element = {<Services />} />
                 <Route path='/contacts' element = {<Contacts />} />
+                <Route path='/login' element = {<Login />} />
+                <Route path='/register' element = {<Register />} />
                 <Route path = '*' element = {<ClientError />} />
             </Routes>
             <FooterMain />

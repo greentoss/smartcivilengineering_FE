@@ -1,0 +1,15 @@
+.login-gradient-custom {
+    /* fallback for old browsers */
+    background: #8d8d8d;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(141, 141, 141, 0.8), rgba(255, 255, 255, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(141, 141, 141, 0.8), rgba(255, 255, 255, 1))
+}
+
+.login-card {
+    border-radius: 1rem;
+    background-color: #343a40;
+}
