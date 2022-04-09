@@ -1,4 +1,5 @@
 import './service-styles.css';
+import {Link} from "react-router-dom";
 
 function Service() {
     return (
@@ -15,6 +16,8 @@ function Service() {
                     </div>
                     <p className='service-preview-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     <span className='mb-4'><a className='service-preview-readmore' href='#'>Read More</a></span>
+                    <span className='mb-4'><Link to='/cart'><a className='service-preview-readmore' href='#'>Go to Cart</a></Link></span>
+
                     <hr />
                 </div>
 

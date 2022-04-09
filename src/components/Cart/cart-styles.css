@@ -1,0 +1,25 @@
+@media (min-width: 1025px) {
+    .h-custom {
+        /*height: 100vh !important;*/
+    }
+}
+
+.cart-section {
+    background-color: #eee;
+}
+
+.shop-item-img {
+    width: 65px;
+}
+
+.width-50px {
+    width: 50px;
+}
+
+.width-80px {
+    width: 80px;
+}
+
+.trash {
+    color: #cecece;
+}
