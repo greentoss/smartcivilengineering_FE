@@ -24,12 +24,16 @@
     height: auto;
 }
 /*==================================*/
+.article-image-holder {
+    overflow: hidden;
+}
+
 .article-img{
     transition: transform 0.5s; /* Animation */
 }
 
 .article-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 /*==================================*/
 

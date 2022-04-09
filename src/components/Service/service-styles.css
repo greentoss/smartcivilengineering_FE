@@ -21,12 +21,17 @@
 }
 
 /*==================================*/
+.service-image-holder {
+    display: block;
+    overflow: hidden;
+}
+
 .service-img{
     transition: transform 0.5s; /* Animation */
 }
 
 .service-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 /*==================================*/
 

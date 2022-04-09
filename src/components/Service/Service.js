@@ -10,7 +10,7 @@ function Service() {
                     <h3 className='px-4'>Service Name</h3>
                 </div>
                 <div className='row '>
-                    <div className='image-holder mb-3'>
+                    <div className='service-image-holder mb-3 p-0'>
                         <img className='service-img' src={require('../../images/page4_img1.jpg')} alt='img'/>
                     </div>
                     <p className='service-preview-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>

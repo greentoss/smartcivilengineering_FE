@@ -12,7 +12,7 @@ function Article() {
                     <h3 className='col-11'>Voluptatem accusantium doloremque laudantium, totam rem aperiam </h3>
                 </div>
                 <div className='row col-12'>
-                    <div className='image-holder col-3 p-0'>
+                    <div className='article-image-holder col-3 p-0'>
                         <img className='article-img' src={require('../../images/page2_img1.jpg')} alt='img'/>
                     </div>
                     <div className='col-9 px-4'>
