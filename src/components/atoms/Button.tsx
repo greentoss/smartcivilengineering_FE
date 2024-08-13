@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   backgroundColorHover = 'bg-gray-700',
 }) => {
-  const buttonClasses = `px-4 py-2 min-w-[100px] ${backgroundColor} ${color} rounded ${className} hover:${backgroundColorHover}`;
+  const buttonClasses = `${backgroundColor} ${color} rounded ${className} px-4 py-2 min-w-[100px] hover:${backgroundColorHover}`;
 
   return (
     <button

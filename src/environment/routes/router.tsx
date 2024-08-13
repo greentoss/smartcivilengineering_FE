@@ -1,9 +1,8 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { ROUTES } from '../constants/routes';
 import { About, Articles, Cart, ClientError, Contacts, Login, Main, Services, Signup } from '@/pages';
-
 
 const AppRouter: React.FC = () => {
   return (
@@ -16,7 +15,8 @@ const AppRouter: React.FC = () => {
       <Route path={ROUTES.login} element={<Login />} />
       <Route path={ROUTES.register} element={<Signup />} />
       <Route path={ROUTES.cart} element={<Cart />} />
-      <Route path='*' element={<ClientError />} />
+      <Route path='*' element={<Navigate to="/" replace />} /> {/* Redirect to '/' */}
+      {/* <Route path='*' element={<ClientError />} /> TODO: 404 move to error page */}
     </Routes>
   );
 };

@@ -1,17 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import logo from '@/assets/images/logo.png';
-import { Button, Tape } from '../../atoms';
-
-const navItems = [
-  { name: 'Main', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Articles', path: '/articles' },
-  { name: 'Services', path: '/services' },
-  { name: 'Contacts', path: '/contacts' },
-];
+import { Button, Tape, LanguageSwitcher } from '@/components/atoms';
 
 const Header: React.FC = () => {
+  const { t } = useTranslation();
+
+  const navItems = [
+    { name: 'navigation.main', path: '/' },
+    { name: 'navigation.about', path: '/about' },
+    { name: 'navigation.articles', path: '/articles' },
+    { name: 'navigation.services', path: '/services' },
+    { name: 'navigation.contacts', path: '/contacts' },
+  ].map((item) => ({ ...item, name: t(item.name) }));
+
   return (
     <header className="header bg-dark-gray flex flex-col">
       <div className="navbar flex flex-row py-4 container mx-auto justify-between items-center">
@@ -27,30 +30,47 @@ const Header: React.FC = () => {
           <ul className="flex space-x-4">
             {navItems.map((item) => (
               <li key={item.name} className="nav-item">
-                <Link to={item.path}>
+                <NavLink 
+                  to={item.path}
+                  className={({ isActive }) => 
+                    isActive 
+                      ? 'font-bold text-white' 
+                      : 'text-white'
+                  }
+                >
                   <Button backgroundColor="bg-dark-gray" backgroundColorHover="bg-gray-700">
                     {item.name}
                   </Button>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
           <div className="flex flex-col items-center ml-6 space-y-2">
-            <div className="flex space-x-2 text-white">
-              <span className="cursor-pointer text-blue-300">EN</span>
-              <span>|</span>
-              <span className="cursor-pointer text-blue-300">UA</span>
-            </div>
-            <Link to="/login">
+            <LanguageSwitcher />
+            <NavLink 
+              to="/login"
+              className={({ isActive }) => 
+                isActive 
+                  ? 'font-bold text-white' 
+                  : 'text-white'
+              }
+            >
               <Button backgroundColor="bg-dark-gray" backgroundColorHover="bg-blue-400">
-                Login
+                {t('navigation.login')}
               </Button>
-            </Link>
-            <Link to="/register">
+            </NavLink>
+            <NavLink 
+              to="/register"
+              className={({ isActive }) => 
+                isActive 
+                  ? 'font-bold text-white' 
+                  : 'text-white'
+              }
+            >
               <Button backgroundColor="bg-dark-gray" backgroundColorHover="bg-blue-400">
-                SignUp
+                {t('navigation.signup')}
               </Button>
-            </Link>
+            </NavLink>
           </div>
         </nav>
       </div>

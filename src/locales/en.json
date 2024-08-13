@@ -1,0 +1,12 @@
+{
+    "navigation": {
+      "main": "Main",
+      "about": "About",
+      "articles": "Articles",
+      "services": "Services",
+      "contacts": "Contacts",
+      "login": "Login",
+      "signup": "SignUp"
+    }
+}
+  
