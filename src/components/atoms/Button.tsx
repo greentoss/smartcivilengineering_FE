@@ -6,7 +6,6 @@ interface ButtonProps {
   color?: string;
   onClick?: () => void;
   children: React.ReactNode;
-  className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,10 +13,9 @@ const Button: React.FC<ButtonProps> = ({
   color = 'text-white',
   onClick,
   children,
-  className = '',
-  backgroundColorHover = 'bg-gray-700',
+  backgroundColorHover = '',
 }) => {
-  const buttonClasses = `${backgroundColor} ${color} rounded ${className} px-4 py-2 min-w-[100px] hover:${backgroundColorHover}`;
+  const buttonClasses = `${backgroundColor} ${color} rounded px-4 py-2 min-w-[100px]} ${backgroundColorHover}`;
 
   return (
     <button

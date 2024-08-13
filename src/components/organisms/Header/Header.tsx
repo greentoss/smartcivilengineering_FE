@@ -38,7 +38,7 @@ const Header: React.FC = () => {
                       : 'text-white'
                   }
                 >
-                  <Button backgroundColor="bg-dark-gray" backgroundColorHover="bg-gray-700">
+                  <Button backgroundColor="bg-dark-gray" backgroundColorHover="hover:bg-gray-700">
                     {item.name}
                   </Button>
                 </NavLink>
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
                   : 'text-white'
               }
             >
-              <Button backgroundColor="bg-dark-gray" backgroundColorHover="bg-blue-400">
+              <Button backgroundColor="bg-dark-gray" backgroundColorHover="hover:bg-blue-400">
                 {t('navigation.login')}
               </Button>
             </NavLink>
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                   : 'text-white'
               }
             >
-              <Button backgroundColor="bg-dark-gray" backgroundColorHover="bg-blue-400">
+              <Button backgroundColor="bg-dark-gray" backgroundColorHover="hover:bg-blue-400">
                 {t('navigation.signup')}
               </Button>
             </NavLink>
